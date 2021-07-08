@@ -19,30 +19,7 @@ namespace Study
                 return newCopy;
             }
         }
-        class Employee
-        {
-
-            private string Name;
-            private string Position;
-
-            public void SetName(string Name)
-            {
-                this.Name = Name;
-            }
-            public string GetName()
-            {
-                return Name;
-            }
-
-            public void SetPosition(string Position)
-            {
-                this.Position = Position;
-            }
-            public String GetPosition()
-            {
-                return Position;
-            }
-        }
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Shallow Copy");
@@ -80,19 +57,7 @@ namespace Study
                 Console.WriteLine($"{target.MyField1} {target.MyField2}");
             }
 
-            Employee pooh = new Employee();
-            pooh.SetName("1");
-            pooh.SetPosition("1");
             
-
-        Console.WriteLine($"{pooh.GetName()} {pooh.GetPosition()}");
-
-
-            Employee pooh2 = new Employee();
-            pooh2.SetName("2");
-            pooh2.SetPosition("2");
-
-            Console.WriteLine($"{pooh2.GetName()} {pooh2.GetPosition()}");
         }
     }
 }
